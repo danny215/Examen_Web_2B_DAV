@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-sm-12">
+    <br>
+  </div>
+
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-2 ">
+    <img src="https://i.pinimg.com/originals/5a/dc/89/5adc89f4a0752dfec5c2f9ba625bfac5.png" alt="fotoperfil" class="imagen-perfil" width="50" height="50" > Danny
+  </div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-6">
+    <div class="input-group input-group-sm mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-sm">
+          <img src="https://cdn.icon-icons.com/icons2/1128/PNG/512/1486164756-113_79715.png" alt="buscar" width="30" height="30">
+        </span>
+      </div>
+      <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <button class="btn btn-submit">Buscar</button>
+  </div>
+  <div class="col-sm-2"></div>
+
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10">
+    <app-usuarios></app-usuarios>
+  </div>
+  <div class="col-sm-1"></div>
+
+
+  <div class="col-sm-1"></div>
+  <div *ngIf="mostrarComponente===true" class="col-sm-10" >
+    <app-entrenadores></app-entrenadores>
+  </div>
+  <div class="col-sm-1"></div>
+
+
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10" *ngIf="cargarEntrenador()">
+    <app-pokemon></app-pokemon>
+  </div>
+  <div class="col-sm-1"></div>
+
+
+
+</div>
+
